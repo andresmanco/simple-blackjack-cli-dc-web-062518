@@ -6,8 +6,8 @@ def deal_card
   1 + rand(11)
 end
 
-def display_card_total(n)
-  
+def display_card_total(card_total)
+  "Your cards add up to #{card_total}"
 end
 
 def prompt_user
@@ -23,8 +23,7 @@ def end_game(card_total)
 end
 
 def initial_round
-  deal_card()
-  deal_card()
+  card = deal_card() + deal_card()
   display_card_total()
 end
 
