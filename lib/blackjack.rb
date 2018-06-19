@@ -31,7 +31,7 @@ def hit?(n)
     prompt_user()
     ans = get_user_input()
     if ans == s 
-      
+      return
     elsif and == h
       deal_card()
     else 
