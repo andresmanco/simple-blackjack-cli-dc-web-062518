@@ -27,16 +27,16 @@ def initial_round
 end
 
 def hit?(n)
-  prompt_user()
-  ans = get_user_input()
-  if ans == s 
-    
-  elsif and == h
-    deal_card()
-  else 
-   invalid_command()
-   
-  end
+  loop do
+    prompt_user()
+    ans = get_user_input()
+    if ans == s 
+      
+    elsif and == h
+      deal_card()
+    else 
+     invalid_command()
+    end
 end
 
 def invalid_command
