@@ -32,7 +32,7 @@ def hit?(current_card_total)
     ans = get_user_input()
     if ans == s 
       return current_card_total
-    elsif and == h
+    elsif ans == h
       return current_card_total + deal_card()
     else 
       invalid_command()
