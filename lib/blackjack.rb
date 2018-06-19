@@ -32,7 +32,9 @@ def hit?(n)
   if ans == s 
     
   elsif and == h
-  
+    deal_card()
+  else 
+   invalid_command()
   end
 end
 
