@@ -26,14 +26,14 @@ def initial_round
   display_card_total(deal_card() + deal_card())
 end
 
-def hit?(n)
+def hit?(current_card_total)
   loop do
     prompt_user()
     ans = get_user_input()
     if ans == s 
-      return
+      return current_card_total
     elsif and == h
-      deal_card()
+      return current_card_total + deal_card()
     else 
       invalid_command()
     end
