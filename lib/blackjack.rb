@@ -35,8 +35,9 @@ def hit?(n)
     elsif and == h
       deal_card()
     else 
-     invalid_command()
+      invalid_command()
     end
+  end
 end
 
 def invalid_command
